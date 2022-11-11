@@ -74,7 +74,7 @@ body {
 
 /* button hero */
 
-.button-hero {
+.button {
   display: block;
   border: 0px solid transparent;
   padding: 10px 32px;
@@ -95,8 +95,8 @@ body {
     background-color 250ms var(--time-delay), box-shadow 250ms var(--time-delay);
 }
 
-.button-hero:hover,
-.button-hero:focus {
+.button:hover,
+.button:focus {
   background-color: var(--secondary-background-color-hero-button);
   box-shadow: var(--button-shadow-hero);
 }
@@ -109,17 +109,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--nav-logo-color);
-}
-
-.header-logo {
   padding: 24px 0;
 }
 
-.logo-web {
+.logo__web {
   color: var(--accent-text-color);
 }
 
-.logo-cellar {
+.basement__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--white-text-color);
@@ -127,31 +124,34 @@ body {
 
 /* Панель навігації */
 
-.navigation-container {
+.header__nav {
+  margin-left: 93px;
+}
+.header__main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.nav-list,
-.auth-list {
+.header__nav-list,
+.header__auth-list {
   display: flex;
 }
 
-.nav-list {
+.header__nav-list {
   margin-left: 93px;
 }
 
-.auth-list {
+.header__auth-list {
   margin-left: auto;
 }
 
-.nav-list .item:not(:last-child),
-.auth-list .item:not(:last-child) {
+.header__nav-list .header__item:not(:last-child),
+.header__auth-list .header__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.header__nav-link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -165,12 +165,12 @@ body {
   transition: color 250ms var(--time-delay);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header__nav-link:hover,
+.header__nav-link:focus {
   color: var(--accent-text-color);
 }
 
-.nav-link::after {
+.header__nav-link::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -183,15 +183,15 @@ body {
   border-radius: 2px;
 }
 
-.link-current {
+.link--current {
   color: var(--accent-text-color);
 }
 
-.link-current.nav-link::after {
+.link__current.header__nav-link::after {
   opacity: 1;
 }
 
-.auth-link {
+.header__auth-link {
   display: flex;
   padding: 32px 0;
   align-items: center;
@@ -205,20 +205,20 @@ body {
   transition: color 250ms var(--time-delay);
 }
 
-.auth-link:hover,
-.auth-link:focus {
+.header__auth-link:hover,
+.header__auth-link:focus {
   color: var(--accent-text-color);
 }
 
-.auth-icon {
+.header__auth-icon {
   margin-right: 10px;
   fill: var(--secondary-text-color);
 
   transition: fill 250ms var(--time-delay);
 }
 
-.auth-link:hover .auth-icon,
-.auth-link:focus .auth-icon {
+.header__auth-link:hover .header__auth-icon,
+.header__auth-link:focus .header__auth-icon {
   fill: var(--accent-text-color);
 }
 
@@ -243,7 +243,7 @@ body {
 
 /* Images */
 
-.activity-image,
+.activity__image,
 .team-image,
 .portfolio-image {
   display: block;
@@ -260,12 +260,12 @@ body {
   background-image: var(--gradient), url(../images/hero-img.jpg);
 }
 
-.overlay {
+.hero__overlay {
   width: 100%;
   max-width: 1600px;
 }
 
-.hero-title {
+.hero__title {
   display: inline-block;
   width: 700px;
   margin-bottom: 30px;
@@ -285,7 +285,7 @@ body {
   padding: 94px 0;
 }
 
-.preference-icon {
+.preference__icon {
   display: flex;
   width: 100%;
   height: 120px;
@@ -297,19 +297,19 @@ body {
   border-radius: 4px;
 }
 
-.preference-list {
+.preference__list {
   display: flex;
 }
 
-.preference-item {
+.preference__item {
   width: calc((100%-90px) / 4);
 }
 
-.preference-item:not(:last-child) {
+.preference__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.preference-subtitle {
+.preference__subtitle {
   display: block;
   margin-bottom: 10px;
 
@@ -319,7 +319,7 @@ body {
   text-transform: uppercase;
 }
 
-.preference-text {
+.preference__text {
   display: block;
 
   font-size: 14px;
@@ -333,7 +333,7 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   display: block;
   margin-bottom: 50px;
 
@@ -343,17 +343,17 @@ body {
   text-align: center;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   width: calc((100% - 60px) / 3);
   gap: 30px;
 }
 
-.desktop-thumb {
+.activity__thumb {
   position: relative;
 }
 
-.activity-item {
+.activity__subtitle {
   display: flex;
   position: absolute;
   bottom: 0%;
@@ -377,23 +377,23 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.team-card {
+.team__card {
   width: calc((100% - 90px) / 4);
   background-color: var(--primary-background-color);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item {
+.team__person {
   padding: 30px;
 }
 
-.team-subtitle {
+.team__subtitle {
   display: block;
   margin-bottom: 10px;
 
@@ -403,7 +403,7 @@ body {
   text-align: center;
 }
 
-.team-text {
+.team__text {
   display: block;
   margin-bottom: 16px;
 
@@ -413,22 +413,22 @@ body {
   color: var(--secondary-text-color);
 }
 
-.team-image {
+.team__image {
   display: block;
 }
 
-.soc-list {
+.soc__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.soc-icon {
+.soc__icon {
   fill: var(--color-link);
   transition: fill 250ms var(--time-delay);
 }
 
-.soc-link {
+.soc__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -439,13 +439,13 @@ body {
   transition: background-color 250ms var(--time-delay);
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.soc__link:hover,
+.soc__link:focus {
   background-color: var(--button-primary-background-color);
 }
 
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
+.soc__link:hover .soc__icon,
+.soc__link:focus .soc__icon {
   fill: var(--white-text-color);
 }
 
@@ -455,25 +455,25 @@ body {
   padding: 94px 0;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   width: calc((100%-150px) / 6);
   height: 92px;
 
   transition: background-color 250ms var(--time-delay);
 }
 
-.clients-icon {
+.clients__icon {
   fill: var(--color-link);
   transition: fill 250ms var(--time-delay);
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -485,13 +485,13 @@ body {
   transition: border-color 250ms var(--time-delay);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--button-primary-background-color);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-text-color);
 }
 
@@ -618,20 +618,20 @@ body {
   background-color: var(--footer-background-color);
 }
 
-.basement-container {
+.basement__container {
   display: flex;
   align-items: baseline;
 }
 
-.adress-item {
+.basement__item {
   display: block;
 }
 
-.adress-item:not(:last-child) {
+.basement__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.adress {
+.basement__item {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -640,7 +640,7 @@ body {
   transition: fill 250ms var(--time-delay);
 }
 
-.adress-link {
+.basement__address-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -650,18 +650,18 @@ body {
   transition: color 250ms var(--time-delay);
 }
 
-.adress:hover,
-.adress:focus,
-.adress-link:hover,
-.adress-link:focus {
+.basement__item:hover,
+.basement__item:focus,
+.basement__address-link:hover,
+.basement__address-link:focus {
   color: var(--accent-text-color);
 }
 
-.cellar-social {
+.basement__social {
   margin-left: auto;
 }
 
-.cellar-title {
+.basement__title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -671,17 +671,17 @@ body {
   color: var(--white-text-color);
 }
 
-.cellar-list {
+.basement__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.cellar-icon {
+.basement__icon {
   fill: var(--white-text-color);
 }
 
-.cellar-link {
+.basement__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -693,12 +693,12 @@ body {
   transition: background-color 250ms var(--time-delay);
 }
 
-.cellar-link:hover,
-.cellar-link:focus {
+.basement__link:hover,
+.basement__link:focus {
   background-color: var(--button-primary-background-color);
 }
 
-.button-hero-cellar {
+.button__cellar {
   display: flex;
   align-items: center;
   margin-left: 12px;
