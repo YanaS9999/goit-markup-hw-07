@@ -698,20 +698,20 @@ body {
   background-color: var(--button-primary-background-color);
 }
 
-.button__cellar {
+.basement__button {
   display: flex;
   align-items: center;
   margin-left: 12px;
   max-width: 200px;
 }
 
-.icon-send {
+.basement__icon {
   margin-left: 10px;
 
   fill: var(--white-text-color);
 }
 
-.signing-cellar {
+.basement__form {
   display: flex;
 }
 
@@ -721,7 +721,7 @@ body {
   margin-right: 12px;
 }
 
-.subscription-tag {
+.basement__input {
   display: block;
   width: 358px;
   height: 50px;
@@ -735,7 +735,7 @@ body {
   border-radius: 4px;
 }
 
-.subscription-label::placeholder {
+.basement__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
 }
@@ -761,7 +761,7 @@ body {
   visibility: hidden;
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -780,7 +780,7 @@ body {
   transform: translate(-50%, -50%) scale(0.1);
 }
 
-.modal-button {
+.backdrop__modal-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -800,12 +800,12 @@ body {
   transition: fill 250ms var(--time-delay);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.backdrop__modal-button:hover,
+.backdrop__modal-button:focus {
   fill: var(--button-primary-background-color);
 }
 
-.modal-text {
+.backdrop__text {
   margin-bottom: 12px;
 
   font-size: 20px;
@@ -813,13 +813,13 @@ body {
   text-align: center;
 }
 
-.form-shape {
+.backdrop__shape {
   display: block;
   position: relative;
   margin-top: 4px;
 }
 
-.form-input {
+.backdrop__input {
   position: relative;
   display: flex;
   margin-bottom: 10px;
@@ -833,15 +833,15 @@ body {
   outline: none;
 }
 
-.form-input:focus {
+.backdrop__input:focus {
   border-color: var(--button-primary-background-color);
 }
 
-.form-input:focus + .form-icon {
+.backdrop__input:focus + .form-icon {
   fill: var(--button-primary-background-color);
 }
 
-.form-icon {
+.backdrop__icon {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -859,7 +859,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.form-label {
+.backdrop__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -888,7 +888,7 @@ body {
   border-color: var(--button-primary-background-color);
 }
 
-.checkbox-field {
+.backdrop__checkbox {
   position: relative;
   display: block;
   margin-bottom: 4px;
@@ -910,7 +910,7 @@ body {
   border-color: var(--focus-form-border-color);
 }
 
-.checkbox-label {
+.backdrop__checkbox-label {
   position: relative;
   display: block;
   text-align: center;
