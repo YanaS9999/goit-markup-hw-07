@@ -187,7 +187,7 @@ body {
   color: var(--accent-text-color);
 }
 
-.link__current.header__nav-link::after {
+.link--current.header__nav-link::after {
   opacity: 1;
 }
 
@@ -705,7 +705,7 @@ body {
   max-width: 200px;
 }
 
-.basement__icon {
+.basement__button-icon {
   margin-left: 10px;
 
   fill: var(--white-text-color);
@@ -837,7 +837,13 @@ body {
   border-color: var(--button-primary-background-color);
 }
 
-.backdrop__input:focus + .form-icon {
+.backdrop__input:focus + .backdrop__icon {
+  fill: var(--button-primary-background-color);
+}
+.backdrop__input:hover {
+  border-color: var(--button-primary-background-color);
+}
+.backdrop__input:hover + .backdrop__icon {
   fill: var(--button-primary-background-color);
 }
 
@@ -887,16 +893,8 @@ body {
 .textarea:focus {
   border-color: var(--button-primary-background-color);
 }
-
-.backdrop__checkbox {
-  position: relative;
-  display: block;
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+.textarea:hover {
+  border-color: var(--button-primary-background-color);
 }
 
 /* Чекбокс */
@@ -955,11 +953,6 @@ body {
   border-radius: 2px;
 
   transition: border-color 250ms var(--time-delay);
-}
-
-.checkbox-input:hover::before,
-.checkbox-input:focus::before {
-  border-color: var(--focus-form-border-color);
 }
 
 .terms-link {
