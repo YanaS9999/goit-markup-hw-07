@@ -1,0 +1,76 @@
+.team {
+    padding: 94px 0;
+    background-color: var(--secondary-background-color);
+}
+
+.team__list {
+    display: flex;
+    gap: 30px;
+}
+
+.team__card {
+    width: calc((100% - 90px) / 4);
+    background-color: var(--primary-background-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__person {
+    padding: 30px;
+}
+
+.team__subtitle {
+    display: block;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__text {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.team__image {
+    display: block;
+}
+
+.team__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team__soc-icon {
+    fill: var(--color-link);
+    transition: fill 250ms var(--time-delay);
+}
+
+.team__soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--time-delay);
+}
+
+.team__soc-link:hover,
+.team__soc-link:focus {
+    background-color: var(--button-primary-background-color);
+}
+
+.team__soc-link:hover .team__soc-icon,
+.team__soc-link:focus .team__soc-icon {
+    fill: var(--white-text-color);
+}
