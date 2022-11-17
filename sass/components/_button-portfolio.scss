@@ -1,28 +1,28 @@
 .button__portfolio {
-    display: inline-block;
-    border: 0px solid transparent;
-    padding: 6px 22px;
-    border-radius: 4px;
-    min-width: 73px;
-    text-align: center;
+  display: inline-block;
+  border: 0px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    font-family: inherit;
-    cursor: pointer;
-    color: var(--primary-text-color);
-    background-color: var(--button-secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--button-secondary-background-color);
 
-    transition: color 250ms var(--time-delay),
-        background-color 250ms var(--time-delay), box-shadow 250ms var(--time-delay);
-}
+  transition: color 250ms var(--time-delay),
+    background-color 250ms var(--time-delay), box-shadow 250ms var(--time-delay);
 
-.button__portfolio:hover,
-.button__portfolio:focus {
+  &:hover,
+  &:focus {
     color: var(--white-text-color);
     background-color: var(--button-primary-background-color);
     box-shadow: var(--button-shadow);
     color: var(--white-text-color);
+  }
 }

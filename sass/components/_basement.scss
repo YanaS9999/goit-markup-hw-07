@@ -1,127 +1,116 @@
 .basement {
   padding: 60px 0;
   background-color: var(--footer-background-color);
-}
 
-.basement__container {
-  display: flex;
-  align-items: baseline;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.basement__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 0;
-  color: var(--white-text-color);
-}
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+    color: var(--white-text-color);
+  }
 
-.basement__item {
-  display: block;
-}
+  &__item {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-text-color);
 
-.basement__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+    transition: fill 250ms var(--time-delay);
 
-.basement__item {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--white-text-color);
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
 
-  transition: fill 250ms var(--time-delay);
-}
+  &__address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--footer-link-color);
 
-.basement__address-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--footer-link-color);
+    transition: color 250ms var(--time-delay);
 
-  transition: color 250ms var(--time-delay);
-}
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
 
-.basement__item:hover,
-.basement__item:focus,
-.basement__address-link:hover,
-.basement__address-link:focus {
-  color: var(--accent-text-color);
-}
+  &__social {
+    margin-left: auto;
+  }
+  &__title {
+    margin-bottom: 20px;
 
-.basement__social {
-  margin-left: auto;
-}
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__icon {
+    fill: var(--white-text-color);
+  }
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--cellar-link-background-color);
 
-.basement__title {
-  margin-bottom: 20px;
+    transition: background-color 250ms var(--time-delay);
+    &:hover,
+    &:focus {
+      background-color: var(--button-primary-background-color);
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    max-width: 200px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-}
+    &-icon {
+      margin-left: 10px;
 
-.basement__list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+      fill: var(--white-text-color);
+    }
+  }
 
-.basement__icon {
-  fill: var(--white-text-color);
-}
+  &__input {
+    display: block;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
 
-.basement__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: var(--cellar-link-background-color);
+    color: var(--primary-background-color);
+    background-color: var(--footer-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-  transition: background-color 250ms var(--time-delay);
-}
-
-.basement__link:hover,
-.basement__link:focus {
-  background-color: var(--button-primary-background-color);
-}
-
-.basement__button {
-  display: flex;
-  align-items: center;
-  margin-left: 12px;
-  max-width: 200px;
-}
-
-.basement__button-icon {
-  margin-left: 10px;
-
-  fill: var(--white-text-color);
-}
-
-.basement__form {
-  display: flex;
-}
-
-.basement__input {
-  display: block;
-  width: 358px;
-  height: 50px;
-  padding: 15px 16px;
-
-  color: var(--primary-background-color);
-  background-color: var(--footer-background-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
-  border-radius: 4px;
-}
-
-.basement__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+    border-radius: 4px;
+    &__input::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+  &__form {
+    display: flex;
+  }
 }

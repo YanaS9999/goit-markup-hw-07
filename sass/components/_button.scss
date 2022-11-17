@@ -1,26 +1,26 @@
 .button {
-    display: block;
-    border: 0px solid transparent;
-    padding: 10px 32px;
-    margin: 0 auto;
-    border-radius: 4px;
-    min-width: 216px;
-    text-align: center;
+  display: block;
+  border: 0px solid transparent;
+  padding: 10px 32px;
+  margin: 0 auto;
+  border-radius: 4px;
+  min-width: 216px;
+  text-align: center;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    font-family: inherit;
-    cursor: pointer;
-    color: var(--white-text-color);
-    background-color: var(--button-primary-background-color);
-    transition: color 250ms var(--time-delay),
-        background-color 250ms var(--time-delay), box-shadow 250ms var(--time-delay);
-}
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--white-text-color);
+  background-color: var(--button-primary-background-color);
+  transition: color 250ms var(--time-delay),
+    background-color 250ms var(--time-delay), box-shadow 250ms var(--time-delay);
 
-.button:hover,
-.button:focus {
+  &:hover,
+  &:focus {
     background-color: var(--secondary-background-color-hero-button);
     box-shadow: var(--button-shadow-hero);
+  }
 }
