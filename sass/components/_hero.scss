@@ -1,18 +1,17 @@
 .hero {
-    text-align: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 200px 0;
-    background-color: var(--hero-background-color);
-    background-image: var(--gradient), url(../images/hero-img.jpg);
-}
+  text-align: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+  background-color: var(--hero-background-color);
+  background-image: var(--gradient), url(../images/hero-img.jpg);
 
-.hero__overlay {
+  &__overlay {
     width: 100%;
     max-width: 1600px;
-}
+  }
 
-.hero__title {
+  &__title {
     display: inline-block;
     width: 700px;
     margin-bottom: 30px;
@@ -24,4 +23,5 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--white-text-color);
+  }
 }

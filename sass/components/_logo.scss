@@ -5,8 +5,8 @@
   line-height: 1.19;
   color: var(--nav-logo-color);
   padding: 24px 0;
-}
 
-.logo__web {
-  color: var(--accent-text-color);
+  &__web {
+    color: var(--accent-text-color);
+  }
 }
