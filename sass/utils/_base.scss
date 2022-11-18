@@ -1,16 +1,10 @@
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
-
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
+html {
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--font-roboto);
+  font-style: normal;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
@@ -20,8 +14,4 @@ img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-html {
-  box-sizing: border-box;
 }
