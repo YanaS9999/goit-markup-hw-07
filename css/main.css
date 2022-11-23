@@ -490,7 +490,7 @@ img {
   -webkit-transition: border-color 250ms var(--time-delay);
   transition: border-color 250ms var(--time-delay);
 }
-.backdrop__checkbox-input::before:checked + .backdrop__checkbox-icon {
+.backdrop__checkbox-input:checked + .backdrop__checkbox-icon {
   opacity: 1;
   background: var(--accent-text-color);
 }
